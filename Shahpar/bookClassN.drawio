@@ -1,55 +1,93 @@
 <mxfile host="65bd71144e">
-    <diagram id="NhyFRNF5jW8fj1KOiwIl" name="Page-1">
-        <mxGraphModel dx="411" dy="529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <diagram id="AdfXOnqm-1cSPFKn8X6Z" name="Page-1">
+        <mxGraphModel dx="658" dy="1698" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="27" value="Books" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#cce5ff;strokeColor=#36393d;fontColor=#1A1A1A;" vertex="1" parent="1">
-                    <mxGeometry x="20" y="90" width="190" height="210" as="geometry">
+                <mxCell id="39" value="Books" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#cce5ff;strokeColor=#36393d;fontColor=#1A1A1A;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="80" width="190" height="210" as="geometry">
                         <mxRectangle x="140" y="210" width="70" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="28" value="+bookId: int&#10;+title: varchar(100)&#10;+description: text&#10;+buyingDate: date&#10;+startReadingDate: date&#10;+endReadingDate: date&#10;+publishDate:date&#10;+chapters: int&#10;+fkCategoriesID: enum&#10;+fkAuthorId: int&#10;" style="align=left;strokeColor=#36393d;fillColor=#f9f7ed;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#1A1A1A;" vertex="1" parent="27">
+                <mxCell id="40" value="+bookId: int&#10;+title: varchar(100)&#10;+description: text&#10;+buyingDate: date&#10;+startReadingDate: date&#10;+endReadingDate: date&#10;+publishDate:date&#10;+chapters: int&#10;+fkBookCategoryID: int&#10;+fkBookAuthorID: int&#10;&#10;" style="align=left;strokeColor=#36393d;fillColor=#f9f7ed;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#1A1A1A;" parent="39" vertex="1">
                     <mxGeometry y="30" width="190" height="180" as="geometry"/>
                 </mxCell>
-                <mxCell id="29" value="" style="align=left;strokeColor=#36393d;fillColor=#f9f7ed;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#1A1A1A;" vertex="1" parent="27">
+                <mxCell id="41" value="" style="align=left;strokeColor=#36393d;fillColor=#f9f7ed;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#1A1A1A;" parent="39" vertex="1">
                     <mxGeometry y="210" width="190" as="geometry"/>
                 </mxCell>
-                <mxCell id="30" value="Authors" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#cce5ff;strokeColor=#36393d;fontColor=#1A1A1A;" vertex="1" parent="1">
-                    <mxGeometry x="450" y="60" width="210" height="200" as="geometry">
+                <mxCell id="42" value="Authors" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#cce5ff;strokeColor=#36393d;fontColor=#1A1A1A;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="-60" width="210" height="200" as="geometry">
                         <mxRectangle x="140" y="210" width="70" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="31" value="+authorId: int&#10;+authorFName: varchar(100)&#10;+authorLName: varchar(100)&#10;+dateOfBirth: date&#10;+fkbookId: int" style="align=left;strokeColor=#36393d;fillColor=#f9f7ed;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#1A1A1A;" vertex="1" parent="30">
+                <mxCell id="43" value="+authorId: int&#10;+authorFName: varchar(100)&#10;+authorLName: varchar(100)&#10;+dateOfBirth: date&#10;+fkbookAuthorId: int" style="align=left;strokeColor=#36393d;fillColor=#f9f7ed;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#1A1A1A;" parent="42" vertex="1">
                     <mxGeometry y="30" width="210" height="180" as="geometry"/>
                 </mxCell>
-                <mxCell id="32" value="" style="align=left;strokeColor=#36393d;fillColor=#f9f7ed;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#1A1A1A;" vertex="1" parent="30">
+                <mxCell id="44" value="" style="align=left;strokeColor=#36393d;fillColor=#f9f7ed;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#1A1A1A;" parent="42" vertex="1">
                     <mxGeometry y="210" width="210" height="-10" as="geometry"/>
                 </mxCell>
-                <mxCell id="33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#1A1A1A;" edge="1" parent="30" source="31" target="31">
+                <mxCell id="47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#1A1A1A;" parent="42" source="43" target="43" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="34" value="Categories" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#cce5ff;strokeColor=#36393d;fontColor=#1A1A1A;" vertex="1" parent="1">
-                    <mxGeometry x="240" y="330" width="190" height="210" as="geometry">
+                <mxCell id="48" value="Categories" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#cce5ff;strokeColor=#36393d;fontColor=#1A1A1A;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="340" width="190" height="210" as="geometry">
                         <mxRectangle x="140" y="210" width="70" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="35" value="+categoryId: int&#10;+categoryName: varchar(100)&#10;&#10;" style="align=left;strokeColor=#36393d;fillColor=#f9f7ed;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#1A1A1A;" vertex="1" parent="34">
+                <mxCell id="49" value="+categoryId: int&#10;+categoryName: varchar(100)&#10;+bookCategoryId: int&#10;" style="align=left;strokeColor=#36393d;fillColor=#f9f7ed;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#1A1A1A;" parent="48" vertex="1">
                     <mxGeometry y="30" width="190" height="180" as="geometry"/>
                 </mxCell>
-                <mxCell id="36" value="" style="align=left;strokeColor=#36393d;fillColor=#f9f7ed;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#1A1A1A;" vertex="1" parent="34">
+                <mxCell id="50" value="" style="align=left;strokeColor=#36393d;fillColor=#f9f7ed;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#1A1A1A;" parent="48" vertex="1">
                     <mxGeometry y="210" width="190" as="geometry"/>
                 </mxCell>
-                <mxCell id="37" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;endFill=1;startArrow=ERzeroToMany;fontColor=#1A1A1A;entryX=0.016;entryY=0.148;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#ffff88;strokeColor=#FFB366;" edge="1" parent="1" target="34">
-                    <mxGeometry width="100" height="100" relative="1" as="geometry">
-                        <mxPoint x="210" y="235" as="sourcePoint"/>
-                        <mxPoint x="310" y="135" as="targetPoint"/>
+                <mxCell id="68" value="BooksCategoris" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#cce5ff;strokeColor=#36393d;fontColor=#1A1A1A;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="340" width="190" height="210" as="geometry">
+                        <mxRectangle x="140" y="210" width="70" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="38" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;endFill=1;startArrow=ERzeroToMany;fontColor=#1A1A1A;entryX=0;entryY=0.54;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#FFB366;" edge="1" parent="1" target="31">
+                <mxCell id="69" value="+bookCategoryId:int&#10;+fkBookId: int&#10;+fkCategorieID:int&#10;&#10;" style="align=left;strokeColor=#36393d;fillColor=#f9f7ed;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#1A1A1A;" parent="68" vertex="1">
+                    <mxGeometry y="30" width="190" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="" style="align=left;strokeColor=#36393d;fillColor=#f9f7ed;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#1A1A1A;" parent="68" vertex="1">
+                    <mxGeometry y="210" width="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="BooksAuthors" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#cce5ff;strokeColor=#36393d;fontColor=#1A1A1A;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="-60" width="190" height="210" as="geometry">
+                        <mxRectangle x="140" y="210" width="70" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="79" value="+bookAuthorId:int&#10;+fkBookId: int&#10;+fkAuthorID:int&#10;&#10;" style="align=left;strokeColor=#36393d;fillColor=#f9f7ed;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#1A1A1A;" parent="78" vertex="1">
+                    <mxGeometry y="30" width="190" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="" style="align=left;strokeColor=#36393d;fillColor=#f9f7ed;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#1A1A1A;" parent="78" vertex="1">
+                    <mxGeometry y="210" width="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" value="" style="fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;fontColor=#1A1A1A;strokeColor=#FFB366;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" target="41" edge="1">
                     <mxGeometry width="100" height="100" relative="1" as="geometry">
-                        <mxPoint x="210" y="170" as="sourcePoint"/>
-                        <mxPoint x="510" y="220" as="targetPoint"/>
+                        <mxPoint x="105" y="340" as="sourcePoint"/>
+                        <mxPoint x="170" y="290" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="82" value="" style="fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;fontColor=#1A1A1A;strokeColor=#FFB366;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="68" target="48" edge="1">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="280" y="390" as="sourcePoint"/>
+                        <mxPoint x="380" y="290" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="83" value="" style="fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;fontColor=#1A1A1A;strokeColor=#FFB366;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="39" edge="1">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="230" y="30" as="sourcePoint"/>
+                        <mxPoint x="380" y="250" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="105" y="30"/>
+                            <mxPoint x="105" y="60"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="84" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;fontColor=#1A1A1A;strokeColor=#FFB366;exitX=0.993;exitY=0.337;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.016;entryY=0.715;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="79" target="43" edge="1">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="280" y="230" as="sourcePoint"/>
+                        <mxPoint x="380" y="130" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
             </root>
